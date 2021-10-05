@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-&vms&+orv(6=gf_4vbq978l*5i^k)&7ebv#+l7@7%=c&mj8i-c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'strjogos-curso-django.herokuapp.com'
+    ]
 
 
 # Application definition
