@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-&vms&+orv(6=gf_4vbq978l*5i^k)&7ebv#+l7@7%=c&mj8i-c
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'strjogos-curso-django.herokuapp.com'
+    'strjogos-curso-django.herokuapp.com',
+    '127.0.0.1'
     ]
 
 
@@ -40,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+
     'core',
 ]
 
