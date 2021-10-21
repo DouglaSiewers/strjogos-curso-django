@@ -34,7 +34,7 @@ urlpatterns = [
     path('generos-apiview/', views.GeneroList.as_view()),
     path('generos-apiview/<int:id>/', views.GeneroDetail.as_view()),
     path('generos-generic/', views.GeneroListGeneric.as_view()),
-    path('generos-generic/<int:id>/', views.GeneroListGeneric.as_view()),
+    path('generos-generic/<int:id>/', views.GeneroDetailGeneric.as_view()),
     path('', include(router.urls))
 
 ]
