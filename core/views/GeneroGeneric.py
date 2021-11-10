@@ -1,0 +1,16 @@
+from rest_framework.generics import ListCreateAPIView
+from rest_framework.generics import RetrieveUpdateDestroyAPIView
+
+from core.models import Genero
+from core.serializers import GeneroSerializer
+
+
+class GeneroListGeneric(ListCreateAPIView):
+    queryset = Genero.objects.all()
+    serializer_class = GeneroSerializer
+
+
+class GeneroDetailGeneric(RetrieveUpdateDestroyAPIView):
+    lookup_field = "id"
+    queryset = Genero.objects.all()
+    serializer_class = GeneroSerializer
